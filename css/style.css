@@ -1,13 +1,43 @@
-body {
-  background-color: #ff0000;
-  color: #0000FF;
+
+body {                  /* default body settings */
+  background-color: bisque;
+  color: black;
+  font-size: 100%;
 }
 
-nav {
+nav {                 /* nav settings */
   background-color: rgba(0,0,0,.5);
   float: left;
   position: fixed;
   width: 100%;
+}
+
+h1 {          /* title */
+  font-size: 360%;
+}
+
+h3 {
+  font-size: 200%;    /* sub title */
+}       
+
+p.author {}     /* placeholder for author, no formating b/c keeping 16px/100% */
+
+a {              /* this edits all of the links */
+  color: white;
+  font-size: 110%;
+  text-decoration: none;
+}
+
+a: link {   /* link is white before selecting */
+  color: white
+}
+
+a: visited { /* link is blue after visiting */
+color: blue 
+}
+
+.story-text {
+  line-height: 1.5
 }
 
 .logo {
@@ -15,11 +45,15 @@ nav {
   width: 100px;
 }
 
-.large-pic {
+.large-pic {    /* there is nothing called large-pic right now */
   width: 100%;
 }
 
-.medium-pic {
+figcaption {
+  font-size: 90%;
+}
+
+.medium-pic {     /* bloc logo */
   width: 70%;
 }
 
@@ -40,13 +74,14 @@ ul {
 li {
   float: right;
   padding: 30px;
+  cursor: pointer;
 }
 
 article {
   padding-top: 100px;
 }
 
-.container {
+.container {   /* this could be incorporated with article */
   margin: 0 auto;
   width: 50%;
 }
